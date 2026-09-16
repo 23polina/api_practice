@@ -1,0 +1,22 @@
+{
+    "family": {
+        "slug": "boeing-787",
+        "name": "Boeing 787",
+        "label": "Boeing 787 Dreamliner",
+        "manufacturer": "Boeing"
+    },
+    "types": [
+        "B788",
+        "B789",
+        "B78X"
+    ],
+    "stats": {
+        "total_occurrences": 172,
+        "hull_losses": 1,
+        "fatal_accidents": 4,
+        "total_fatalities": 263,
+        "first_event_year": 2012,
+        "latest_event_year": 2026
+    },
+    "attribution": "Statistics derived from the FlightFinder merged multi-source accident corpus (occurrence-level dedup across the agencies listed at /api/v1/data/sources; per-source licenses apply to narrative text, not to these aggregates)."
+}
