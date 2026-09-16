@@ -69,4 +69,15 @@ def test_not_found_aircraft_family(api_client):
     get_invalid_response_json = get_invalid_response.json()["error"]
     assert get_invalid_response.status_code == 404
     assert get_invalid_response_json == {"code": "not_found",
-                                         "message": "no aircraft family with slug 'boeing-787000'"}
+                                         "message": "no aircraft family with slug 'boeing-787000'"}\
+
+
+def test_not_found_narrative(api_client):
+    get_not_found_response = api_client.get_endpoint("narratives/usafaib/evt:aaiahk:2018-11-13:runway-incursion-ri-vap-incident-bombard:BOEING73781B")
+    get_not_found_response_json = get_not_found_response.json()["error"]
+
+    assert get_not_found_response.status_code == 404
+    assert get_not_found_response_json == { "code": "not_found",
+                                            "message": "no narrative 'evt:aaiahk:2018-11-13:runway-incursion-ri-vap-incident-bombard:BOEING73781B' for source 'usafaib'"
+
+    }
