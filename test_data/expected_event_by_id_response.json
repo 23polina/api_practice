@@ -1,0 +1,44 @@
+{
+    "id": "evt:aaiahk:2016-02-27:loss-of-control-inflight-accident-invest:ZLINZ242L",
+    "occurrence_type": "accident",
+    "event_date": "2016-02-27",
+    "year": 2016,
+    "severity": "fatal",
+    "is_hull_loss": 1,
+    "country_iso": "HK",
+    "region": null,
+    "lat": null,
+    "lon": null,
+    "type_icao": null,
+    "type_full": "Zlin Z242L",
+    "manufacturer": null,
+    "family": null,
+    "family_slug": null,
+    "registration": "B-LUR",
+    "operator": null,
+    "flight_nature": null,
+    "occupants": 1,
+    "fatalities_onboard": 1,
+    "ground_fatalities": null,
+    "fatalities_total": 1,
+    "phase": "maneuvering",
+    "category": "loss_of_control_inflight",
+    "cause_summary": null,
+    "report_url": "https://www.tlb.gov.hk/aaia/doc/Investigation Report 02_2020.pdf",
+    "primary_source": "aaiahk",
+    "sources": [
+        {
+            "source": "aaiahk",
+            "attribution": "the Air Accident Investigation Authority of Hong Kong (AAIA)",
+            "license": "Air Accident Investigation Authority (AAIA), Hong Kong SAR",
+            "url": "https://www.tlb.gov.hk/aaia/doc/Investigation Report 02_2020.pdf"
+        }
+    ],
+    "narratives": [
+        {
+            "source": "aaiahk",
+            "id": "IVR-2020-02",
+            "ref": "/api/v1/data/narratives/aaiahk/IVR-2020-02"
+        }
+    ]
+}
