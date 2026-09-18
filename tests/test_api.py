@@ -1,6 +1,6 @@
 import pytest
 
-from test_data.test_data import expected_json_file
+from utils.test_data import expected_json_file
 
 
 def test_verify_get_events_endpoint(api_client):
