@@ -1,5 +1,6 @@
-import json
 import pytest
+
+from test_data.test_data import expected_json_file
 
 
 def test_verify_get_events_endpoint(api_client):
@@ -23,10 +24,7 @@ def test_verify_event_by_id(api_client):
 
     assert get_event_id_response.status_code == 200
 
-    with open("test_data/expected_event_by_id_response.json") as file:
-        expected_response_event_by_id = json.load(file)
-
-    assert get_event_id_response.json() == expected_response_event_by_id
+    assert get_event_id_response.json() == expected_json_file("test_data/expected_event_by_id_response.json")
 
 
 def test_not_found_event_by_incorrect_id(api_client):
@@ -58,10 +56,7 @@ def test_data_aircraft_family_boeing_787(api_client):
 
     assert get_aircraft_family_response.status_code == 200
 
-    with open("test_data/boeing-787_family.json") as file_boeing:
-        expected_boeing_json = json.load(file_boeing)
-
-    assert get_aircraft_family_response_json == expected_boeing_json
+    assert get_aircraft_family_response_json == expected_json_file("test_data/boeing-787_family.json")
 
 
 def test_not_found_aircraft_family(api_client):
